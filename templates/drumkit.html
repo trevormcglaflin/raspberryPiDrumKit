@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RaspberryPi Drumkit</title>
+    <link rel="stylesheet" href="static/drumkit.css">
+</head>
+<body>
+    <h1>Trevor's RaspberryPi Drumkit</h1>
+    <br>
+    <div id="drum-pic">
+        <img src="static/drumkit.jpg" alt="Drumset">
+    </div>
+    <br>
+    <form>
+        <label for="bpm">Beats per Minute(BPM): </label>
+        <input id="bpm" type="text"><br>
+        <label for="time-signature">Time Signature: </label>
+        <select id="time-signature" name="time-signature">
+            <option value="44">4/4 Time</option>
+            <option value="442">4/4 Time(2)</option>
+            <option value="24">2/4 Time</option>
+            <option value="34">3/4 Time</option>
+        </select>
+        <br>
+        <button id="play-drums" type="button">Rock On!</button>
+    </form>
+    <br>
+    <h3 id="message"></h3>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/static/drumkit.js"></script>
+</body>
+</html>
